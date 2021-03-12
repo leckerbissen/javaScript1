@@ -1,0 +1,7 @@
+<meta charset="utf-8">
+<script>
+    let celsiusTemp = -13;
+    let fahrenTemp = (9 / 5) * celsiusTemp + 32;
+
+    alert(fahrenTemp);
+</script>
