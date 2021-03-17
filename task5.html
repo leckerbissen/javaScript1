@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        'use strict'
+
+        let arg1 = +prompt("Введите первое число");
+        let arg2 = +prompt("Введите второе число");
+        let operation = prompt("Какую операцию выполнить (сложение, умножение, деление, разность)?");
+
+        function mathOperation(arg1, arg2, operation) {
+
+            function sum(arg1, arg2) {
+                return arg1 + arg2;
+            }
+
+            function devision(arg1, arg2) {
+                return arg1 / arg2;
+            }
+
+            function product(arg1, arg2) {
+                return arg1 * arg2;
+            }
+
+            function difference(arg1, arg2) {
+                return arg1 - arg2;
+            }
+
+            switch (operation) {
+                case "сложение":
+                    sum(arg1, arg2);
+                    break;
+                case "умножение":
+                    product(arg1, arg2);
+                    break;
+                case "деление":
+                    devision(arg1, arg2);
+                    break;
+                case "разность":
+                    difference(arg1, arg2);
+                    break;
+                default:
+                    console.log("Не знаю такую операцию");
+            }
+        }
+        mathOperation(arg1, arg2, operation);
+    </script>
+</body>
+
+</html>
